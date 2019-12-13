@@ -276,6 +276,10 @@ a.boxed_btn {
    height: 45px;
 }
 
+.space_60 {
+   height: 60px;
+}
+
 .no_space_top {
    padding-top: 0;
 }
@@ -677,7 +681,6 @@ a.boxed_btn {
 .owl-theme .owl-dots .owl-dot:hover span {
    background: #0bbbc1;
 }
-
 /* testimonial section end */
 
 /* brand logo start */
@@ -695,7 +698,6 @@ a.boxed_btn {
    display: table-cell;
    vertical-align: middle;
 }
-
 /* brand logo end */
 
 /* Footer area start */
@@ -762,7 +764,6 @@ a.boxed_btn {
    color: #fff;
    border-color: #0bbbc1;
 }
-
 /* Footer area end */
 
 
@@ -851,7 +852,6 @@ a.boxed_btn {
    padding: 10px;
    width: 100%;
 }
-
 /* hero area end */
 
 
@@ -884,7 +884,6 @@ a.boxed_btn {
    border-radius: 50px;
    margin-bottom: 20px;
 }
-
 /* home 2 about area end */
 
 
@@ -926,7 +925,6 @@ a.boxed_btn {
 .service_box {
    margin-bottom: 50px;
 }
-
 /* home 2 services area end */
 
 
@@ -986,9 +984,7 @@ a.boxed_btn {
 }
 
 
-/********************************************* 
-         About Page Start
- **********************************************/
+/* About Page Start */
 .about_service_bg {
    background-image: url(../img/about/about-service-bg.jpg);
 }
@@ -1030,15 +1026,10 @@ a.boxed_btn {
    margin-top: 30px;
 }
 
-/********************************************* 
-         About Page End
- **********************************************/
-\
+/* About Page End */
 
 
-/********************************************* 
-         Single Service Page Start
- **********************************************/
+/* Single Service Page Start */
 .widget {
    background-color: #fafafa;
    padding: 30px;
@@ -1094,13 +1085,11 @@ a.boxed_btn {
    margin-top: 40px;
    margin-bottom: 10px;
 }
-/********************************************* 
-         Single Service Page End
- **********************************************/
 
-/********************************************* 
-         Portfolio Page Start
- **********************************************/
+/* Single Service Page End */
+
+
+/* Portfolio Page Start */
 .portfolio_filter li {
    list-style: none;
    display: inline-block;
@@ -1115,19 +1104,66 @@ a.boxed_btn {
 li.portfolio_active {
    color: #0bbbc1;
 }
-/********************************************* 
-         Portfolio Page End
- **********************************************/
+
+/* Portfolio Page End */
 
 
- /********************************************* 
-         Single Portfolio Page Start
- **********************************************/
-
- .single_portfolio h3 {
+/* Single Portfolio Page Start */
+.single_portfolio h3 {
    margin-bottom: 20px;
    font-size: 24px;
 }
- /********************************************* 
-         Single Portfolio Page End
- **********************************************/
+
+/* Single Portfolio Page End */
+
+
+/* FAQ Page Start */
+.card.twist_faq {
+   border: none;
+   box-shadow: 0px 2px 4px 3px #f1eef5;
+   margin-bottom: 20px;
+   border-radius: 0%;
+}
+
+.twist_faq .card-header {
+   border: none;
+   background-color: #fbfbfb;
+   padding: 0;
+}
+
+.twist_faq .card-body {
+   color: #777777;
+   background: #fbfbfb;
+}
+
+.twist_faq button.btn.btn-link {
+   color: #222222;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 700;
+   font-family: 'Zilla Slab', serif;
+   width: 100%;
+   text-align: left;
+   padding: 25px 25px;
+   position: relative;
+}
+
+.twist_faq button.btn.btn-link[aria-expanded="true"]:after {
+   content: '-';
+}
+
+.twist_faq button.btn.btn-link:after {
+   position: absolute;
+   content: '+';
+   right: 25px;
+   background-color: #0BBBC1;
+   color: #fff;
+   height: 30px;
+   width: 30px;
+   font-size: 25px;
+   text-align: center;
+   line-height: 28px;
+   margin-top: -2px;
+}
+
+/* FAQ Page End */
