@@ -7,7 +7,12 @@ body {
    line-height: 1.8;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
    font-family: 'Zilla Slab', serif;
    font-weight: 700;
    color: #000;
@@ -15,16 +20,24 @@ h1, h2, h3, h4, h5, h6 {
    line-height: 1.3;
 }
 
-a:hover, a:focus {
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+a:hover,
+a:focus {
    text-decoration: none;
 }
 
-p{
+p {
    margin: 0;
    padding: 0;
 }
 
-input:focus, button:focus, textarea:focus {
+input:focus,
+button:focus,
+textarea:focus {
    outline: none;
 }
 
@@ -39,6 +52,7 @@ input:focus, button:focus, textarea:focus {
 .slide_bg_1 {
    background-image: url(../img/slide-bg.jpg);
 }
+
 .slide_bg_2 {
    background-image: url(../img/slide.jpg);
 }
@@ -53,7 +67,8 @@ input:focus, button:focus, textarea:focus {
    text-decoration: none;
 }
 
-.header_area a, .search_icon {
+.header_area a,
+.search_icon {
    color: #333;
 }
 
@@ -205,7 +220,8 @@ a.boxed_btn {
    left: 0;
 }
 
-.header_area.header_absolute a, .header_absolute .search_icon {
+.header_area.header_absolute a,
+.header_absolute .search_icon {
    color: #fff;
 }
 
@@ -249,12 +265,16 @@ a.boxed_btn {
 }
 
 .space_100 {
- height: 100px;
+   height: 100px;
 }
 
 .space_70 {
    height: 70px;
-  }
+}
+
+.space_45 {
+   height: 45px;
+}
 
 .no_space_top {
    padding-top: 0;
@@ -343,7 +363,7 @@ a.boxed_btn {
    font-size: 20px;
 }
 
-.single_service_item:hover h4, 
+.single_service_item:hover h4,
 .single_service_item:hover .service_icon {
    color: #fff;
 }
@@ -387,7 +407,7 @@ a.boxed_btn {
    margin-top: 50px;
 }
 
-.single_skill_bar h3{
+.single_skill_bar h3 {
    margin-top: 55px;
    text-transform: capitalize;
 }
@@ -400,9 +420,9 @@ a.boxed_btn {
    position: absolute;
    top: 50%;
    left: 0;
-   width: 100%; 
-   font-size: 48px;  
-   font-weight: 700;  
+   width: 100%;
+   font-size: 48px;
+   font-weight: 700;
    color: #373737;
    transform: translateY(-50%);
 }
@@ -411,6 +431,7 @@ a.boxed_btn {
 .cta_bg_1 {
    background-image: url(../img/col_to_action_bg_1.jpg);
 }
+
 .cta_bg_2 {
    background-image: url(../img/home2/home_2-call_to_action_bg.jpg);
 }
@@ -437,7 +458,9 @@ a.boxed_btn {
    margin-bottom: 30px;
 }
 
-.black_overlay, .black_overlay h1, .black_overlay .boxed_btn {
+.black_overlay,
+.black_overlay h1,
+.black_overlay .boxed_btn {
    color: #fff;
 }
 
@@ -451,19 +474,23 @@ a.boxed_btn {
 
 
 /* portfolio section */
-.portfolios h2, .teams h2 {
+.portfolios h2,
+.teams h2 {
    margin-bottom: 30px;
 }
 
 .portfolio_bg_1 {
    background-image: url(../img/portfolio/portfolio_1.jpg);
 }
+
 .portfolio_bg_2 {
    background-image: url(../img/portfolio/portfolio_2.jpg);
 }
+
 .portfolio_bg_3 {
    background-image: url(../img/portfolio/portfolio_3.jpg);
 }
+
 .portfolio_bg_4 {
    background-image: url(../img/portfolio/portfolio_4.jpg);
 }
@@ -514,7 +541,9 @@ a.boxed_btn {
    margin-top: 20px;
    margin-bottom: 0;
 }
-.portfolio_hover h4, .portfolio_hover a {
+
+.portfolio_hover h4,
+.portfolio_hover a {
    color: #fff;
    font-size: 20px;
 }
@@ -568,7 +597,8 @@ a.boxed_btn {
    margin-top: 10px;
 }
 
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
    display: unset;
 }
 
@@ -576,7 +606,8 @@ a.boxed_btn {
    display: none;
 }
 
-.team_list.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.team_list.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
    background: #0bbbc1;
 }
 
@@ -612,24 +643,29 @@ a.boxed_btn {
    border-radius: 5px;
 }
 
+.testimonial_area .single_testimonial_item {
+   box-shadow: 0px 0px 10px 2px #ddd;
+}
+
 .single_testimonial_item h5 {
-    font-size: 14px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    font-style: normal;
+   font-size: 14px;
+   margin-top: 30px;
+   margin-bottom: 0px;
+   font-style: normal;
 }
 
 .single_testimonial_item h5 span {
-    display: block;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 12px;
-    font-family: 'Noto Sans', sans-serif;
+   display: block;
+   font-weight: 300;
+   font-style: normal;
+   font-size: 12px;
+   font-family: 'Noto Sans', sans-serif;
 }
 
 .testimonial_icon {
    font-size: 30px;
    margin-bottom: 12px;
+   color: #0bbbc1;
 }
 
 .owl-carousel .owl-item .single_brand_logo_item img {
@@ -637,16 +673,18 @@ a.boxed_btn {
    margin: 0 auto;
 }
 
-.testimonial_list.owl-theme .owl-dots .owl-dot.active span, 
+.testimonial_list.owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
    background: #0bbbc1;
 }
+
 /* testimonial section end */
 
 /* brand logo start */
 .brand_logo_carousel {
    margin: -20px 0px;
 }
+
 .single_brand_logo_item {
    display: table;
    width: 100%;
@@ -657,6 +695,7 @@ a.boxed_btn {
    display: table-cell;
    vertical-align: middle;
 }
+
 /* brand logo end */
 
 /* Footer area start */
@@ -723,6 +762,7 @@ a.boxed_btn {
    color: #fff;
    border-color: #0bbbc1;
 }
+
 /* Footer area end */
 
 
@@ -730,7 +770,7 @@ a.boxed_btn {
    Home page 2 Start
  **********************/
 
- /* hero area start */
+/* hero area start */
 .hero_area {
    background-image: url(../img/home2/hero_bg.jpg);
    background-position: center;
@@ -811,15 +851,16 @@ a.boxed_btn {
    padding: 10px;
    width: 100%;
 }
- /* hero area end */
+
+/* hero area end */
 
 
- /* home 2 about area start */
- .section_gray_bg {
+/* home 2 about area start */
+.section_gray_bg {
    background-color: #fbfbfb;
 }
 
- .section_gray_bg h4 {
+.section_gray_bg h4 {
    font-size: 20px;
 }
 
@@ -830,6 +871,7 @@ a.boxed_btn {
 .about_success a {
    margin-top: 45px;
 }
+
 .about_success h2 {
    margin-bottom: 26px;
 }
@@ -843,22 +885,23 @@ a.boxed_btn {
    margin-bottom: 20px;
 }
 
- /* home 2 about area end */
+/* home 2 about area end */
 
 
- /* home 2 services area start */
+/* home 2 services area start */
 
 .margin_80 {
    margin: 80px 0px;
 }
 
-.margin_bottom_50{
+.margin_bottom_50 {
    margin-bottom: 50px;
 }
 
 .service_box:hover {
    background: #ddd;
 }
+
 .service_box {
    background: #fff;
    padding: 30px 20px;
@@ -883,7 +926,8 @@ a.boxed_btn {
 .service_box {
    margin-bottom: 50px;
 }
- /* home 2 services area end */
+
+/* home 2 services area end */
 
 
 /* home 2 our team area start */
@@ -891,27 +935,18 @@ a.boxed_btn {
    margin: 20px 0px;
 }
 
-.theme_2 .single_team_item {
+.single_team_item {
    box-shadow: 0px 0px 8px #ddd;
    border: 2px solid transparent;
+   transition: .2s;
 }
 
-.theme_2 .single_team_item:hover {
+.single_team_item:hover {
    border: 2px solid #0bbbc1;
    box-shadow: 0px 0px 0px;
 }
+
 /* home 2 our team area end */
-
-.theme_2 .single_team_item {
-   box-shadow: 0px 0px 8px #ddd;
-   border: 2px solid transparent;
-}
-
-.theme_2 .single_team_item:hover {
-   border: 2px solid #0bbbc1;
-   box-shadow: 0px 0px 0px;
-}
-
 .single_blog_box {
    box-shadow: 0px 0px 8px #f1f1f1;
    padding: 27px;
@@ -936,7 +971,9 @@ a.boxed_btn {
    background: #131313;
 }
 
-.footer_area.dark_bg h3, .footer_area.dark_bg a, .footer_area.dark_bg p {
+.footer_area.dark_bg h3,
+.footer_area.dark_bg a,
+.footer_area.dark_bg p {
    color: #fff;
 }
 
@@ -966,7 +1003,8 @@ a.boxed_btn {
    padding-bottom: 130px;
 }
 
-.breadcrumb_area, .breadcrumb_area a {
+.breadcrumb_area,
+.breadcrumb_area a {
    color: #fff;
 }
 
@@ -991,11 +1029,14 @@ a.boxed_btn {
 .about_service_bg p {
    margin-top: 30px;
 }
+
 /********************************************* 
          About Page End
- **********************************************/\
+ **********************************************/
+\
 
- /********************************************* 
+
+/********************************************* 
          Single Service Page Start
  **********************************************/
 .widget {
@@ -1032,7 +1073,7 @@ a.boxed_btn {
    color: #333;
    font-weight: 700;
    font-family: 'Zilla Slab', serif;
-   transition: .3s;
+   transition: .1s;
 }
 
 .nav_menu ul li a:hover {
@@ -1053,29 +1094,40 @@ a.boxed_btn {
    margin-top: 40px;
    margin-bottom: 10px;
 }
- /********************************************* 
+/********************************************* 
          Single Service Page End
  **********************************************/
 
+/********************************************* 
+         Portfolio Page Start
+ **********************************************/
+.portfolio_filter li {
+   list-style: none;
+   display: inline-block;
+   font-size: 15px;
+   padding: 10px 15px;
+   font-weight: 700;
+   font-family: 'Zilla Slab', serif;
+   color: #000;
+   cursor: pointer;
+}
+
+li.portfolio_active {
+   color: #0bbbc1;
+}
+/********************************************* 
+         Portfolio Page End
+ **********************************************/
 
 
+ /********************************************* 
+         Single Portfolio Page Start
+ **********************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ .single_portfolio h3 {
+   margin-bottom: 20px;
+   font-size: 24px;
+}
+ /********************************************* 
+         Single Portfolio Page End
+ **********************************************/
