@@ -67,9 +67,8 @@ jQuery(document).ready(function () {
   });
 });
 
-// Fot isotop
+// For Portfolio isotope
 jQuery(document).ready(function () {
-
   $('.portfolio_list').isotope({
     layoutMode: 'masonry',
     masonry: {
@@ -93,4 +92,5 @@ jQuery(document).ready(function () {
       }
     });
   });
+  
 });
