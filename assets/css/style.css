@@ -681,6 +681,7 @@ a.boxed_btn {
 .owl-theme .owl-dots .owl-dot:hover span {
    background: #0bbbc1;
 }
+
 /* testimonial section end */
 
 /* brand logo start */
@@ -698,6 +699,7 @@ a.boxed_btn {
    display: table-cell;
    vertical-align: middle;
 }
+
 /* brand logo end */
 
 /* Footer area start */
@@ -764,6 +766,7 @@ a.boxed_btn {
    color: #fff;
    border-color: #0bbbc1;
 }
+
 /* Footer area end */
 
 
@@ -852,6 +855,7 @@ a.boxed_btn {
    padding: 10px;
    width: 100%;
 }
+
 /* hero area end */
 
 
@@ -884,6 +888,7 @@ a.boxed_btn {
    border-radius: 50px;
    margin-bottom: 20px;
 }
+
 /* home 2 about area end */
 
 
@@ -925,6 +930,7 @@ a.boxed_btn {
 .service_box {
    margin-bottom: 50px;
 }
+
 /* home 2 services area end */
 
 
@@ -1165,6 +1171,7 @@ li.portfolio_active {
    line-height: 28px;
    margin-top: -2px;
 }
+
 /* FAQ Page End */
 
 /* Blog Page Start */
@@ -1275,11 +1282,11 @@ ul.twist_pagination .page-item:last-child .page-link {
    outline-offset: 0px;
    -webkit-appearance: 0px;
    -moz-appearance: 0px;
-        appearance: 0px;
+   appearance: 0px;
    border: none;
 }
 
-.widegt.widget_search input::placeholder{
+.widegt.widget_search input::placeholder {
    color: #a7a7a7;
 }
 
@@ -1300,7 +1307,8 @@ ul.twist_pagination .page-item:last-child .page-link {
    list-style: none;
    border-bottom: 1px solid #E4E4E4;
    padding-bottom: 10px;
-   margin-bottom: 20px;;
+   margin-bottom: 20px;
+   ;
 }
 
 .thumb_posts li:last-child {
@@ -1332,10 +1340,169 @@ ul.twist_pagination .page-item:last-child .page-link {
    text-transform: lowercase;
 }
 
-
 /* Blog Page End */
 
 
+/* Single-Post Page Start */
+.post_featured_content {
+   margin-bottom: 70px;
+}
+
+.article_title {
+   font-size: 24px;
+   color: #222;
+   margin-bottom: 30px;
+}
+
+.entry_content p {
+   margin-bottom: 20px;
+}
+
+.entry_content blockquote {
+   font-size: 14px;
+   background-color: #fbfbfb;
+   color: #8b8b8b;
+   border: none;
+   margin: 0 8% 20px;
+   padding: 30px 60px;
+}
+
+.post_share {
+   margin: 70px 0px;
+}
+
+.post_share a {
+   color: #fff;
+   background-color: #275BAA;
+   display: inline-block;
+   padding: 12px 30px;
+   border-radius: 30px;
+   margin-right: 10px;
+   font-weight: 600;
+}
+
+.post_share i.fa {
+   padding-right: 5px;
+}
+
+.post_share a.tweeter_share_btn {
+   background-color: #28C8F0;
+}
+
+.post_share a.pinterest_share_btn {
+   background-color: #D6061E;
+}
+
+.author_details {
+   margin-bottom: 70px;
+}
+
+.author_details h4 {
+   margin-bottom: 20px;
+   font-size: 16px;
+}
+
+.comment_list {
+   margin-bottom: 70px;
+}
+
+h2.commet_title,
+.comment_form h2 {
+   font-size: 24px;
+   position: relative;
+   margin-bottom: 60px;
+   padding-bottom: 10px;
+}
+
+h2.commet_title:after,
+.comment_form h2:after {
+   content: '';
+   position: absolute;
+   background: #0bbbc1;
+   height: 3px;
+   width: 50px;
+   left: 0;
+   bottom: 0;
+}
+
+ul.commets {
+   margin: 0;
+   padding: 0;
+}
+
+ul.commets li {
+   background-color: #FBFBFB;
+   list-style: none;
+   padding: 30px;
+   margin-bottom: 30px;
+   position: relative;
+   padding-left: 140px;
+}
+
+img.comments_author_img {
+   position: absolute;
+   border-radius: 50%;
+   left: 30px;
+   top: 30px;
+}
+
+.comment_meta {
+   margin-bottom: 30px;
+   position: relative;
+   font-size: 12px;
+}
+
+.comment_meta h4 {
+   margin-bottom: 5px;
+   font-size: 16px;
+   color: #222;
+}
+
+a.comment_reply {
+   float: right;
+   font-family: 'Zilla Slab', serif;
+   font-weight: 700;
+   font-size: 16px;
+   color: #222;
+   top: 5%;
+   right: 5%;
+   position: absolute;
+   transition: .2s;
+}
+
+ul.commets li:hover a.comment_reply {
+   color: #0bbbc1;
+}
+
+.comment_form input[type=text],
+.comment_form input[type=email],
+.comment_form input[type=url],
+.comment_form textarea {
+   padding: 10px;
+   width: 100%;
+   margin-bottom: 20px;
+   border: 1px solid #ddd;
+}
+
+.comment_form input::placeholder,
+.comment_form textarea::placeholder {
+   color: #8b8b8b;
+}
+
+
+.comment_form textarea {
+   height: 120px;
+}
+
+.comment_form input[type=submit] {
+   border: none;
+   background: #0bbbc1;
+   padding: 12px 30px;
+   color: #fff;
+   font-weight: 700;
+   border-radius: 5px;
+   cursor: pointer;
+}
 
 
 
@@ -1345,3 +1512,8 @@ ul.twist_pagination .page-item:last-child .page-link {
 
 
 
+
+
+
+
+/* Single-Post Page End */
