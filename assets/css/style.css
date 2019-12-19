@@ -1594,3 +1594,40 @@ ul.commets li:hover a.comment_reply {
 }
 
 /* Contact Page End */
+
+
+/* 404 Page Start */
+.error_content h1 {
+   font-size: 60px;
+   color: #0BBBC1;
+   text-shadow: 1px 2px 5px;
+   margin-bottom: 40px;
+}
+
+.error_content p {
+   font-size: 16px;
+}
+
+/* 404 Page End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
