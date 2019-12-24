@@ -82,12 +82,16 @@ textarea:focus {
    display: inline-block;
    position: relative;
    transition: .3s;
-   padding: 15px;
+}
+
+.mainmenu ul li a.t_color:hover{
+   color: rgb(11, 187, 193);
 }
 
 .mainmenu ul li a {
    text-decoration: none;
    display: block;
+   padding: 15px;
 }
 
 .mainmenu ul li ul {
@@ -105,10 +109,25 @@ textarea:focus {
 }
 
 .mainmenu ul li ul li:hover {
-   background-color: rgba(80, 78, 78);
+   background-color: rgb(11, 187, 193);
 }
 
 .mainmenu ul li:hover ul li {
+   display: block;
+}
+
+.mainmenu ul ul li {
+   position: relative;
+}
+
+.mainmenu ul ul li .dropdown_2 {
+   position: absolute;
+   top: 0%;
+   left: 100%;
+   display: none;
+}
+
+.mainmenu ul li ul li:hover .dropdown_2 {
    display: block;
 }
 
@@ -267,6 +286,7 @@ a.boxed_btn {
 
 .section_padding h2 {
    font-size: 30px;
+   margin-bottom: 30px;
 }
 
 .service_c_top p {
@@ -1618,25 +1638,3 @@ ul.commets li:hover a.comment_reply {
 }
 
 /* 404 Page End */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
