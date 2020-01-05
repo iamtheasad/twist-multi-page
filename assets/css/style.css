@@ -213,19 +213,6 @@ textarea:focus {
    margin: 50px 0px;
 }
 
-.play_icon {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   background-color: #0bbbc1;
-   height: 60px;
-   width: 60px;
-   border-radius: 50%;
-   line-height: 55px;
-   margin-left: -30px;
-   margin-top: -27px;
-}
-
 .boxed_btn {
    background-color: #0bbbc1;
    padding: 10px 25px;
