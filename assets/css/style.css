@@ -90,7 +90,7 @@ textarea:focus {
    font-family: 'Zilla Slab', serif;
 }
 
-.mainmenu li a:hover {
+.mainmenu li:hover a {
    color: #0BBBC1;
 }
 
@@ -141,10 +141,15 @@ ul.mega_menu_1 li {
 
 .mega_menu_content ul li a {
    padding-left: 20px;
+   color: #fff !important;
 }
 
-.mega_menu_content ul li a:hover,
-.dropdown_header_menu ul li a:hover {
+.dropdown_header_menu ul li a {
+   color: #fff !important;
+}
+
+.mega_menu_content ul li:hover a,
+.dropdown_header_menu ul li:hover a {
    background: #000;
    color: #fff;
 }
