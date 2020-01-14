@@ -6,7 +6,6 @@ jQuery(document).ready(function () {
     loop: true,
     navText: ["<i class='fa fa-long-arrow-left'></i>", "<i class='fa fa-long-arrow-right'></i>"],
     autoplay: true,
-    dots: true,
   });
 
   // owlCarousel for our team section

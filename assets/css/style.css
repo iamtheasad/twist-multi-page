@@ -1648,6 +1648,26 @@ ul.commets li:hover a.comment_reply {
    color: #8b8b8b;
 }
 
+.comment_form input::-webkit-input-placeholder,
+.comment_form textarea::-webkit-input-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input::-moz-placeholder,
+.comment_form textarea::-moz-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input:-ms-input-placeholder,
+.comment_form textarea:-ms-input-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input::-ms-input-placeholder,
+.comment_form textarea::-ms-input-placeholder {
+   color: #8b8b8b;
+}
+
 .comment_form input::placeholder,
 .comment_form textarea::placeholder {
    color: #8b8b8b;
