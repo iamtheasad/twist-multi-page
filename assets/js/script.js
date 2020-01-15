@@ -10,31 +10,61 @@ jQuery(document).ready(function () {
 
   // owlCarousel for our team section
   $("#teams").owlCarousel({
-    items: 3,
     loop: true,
     autoplay: true,
     dots: true,
     nav: false,
     center: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      }
+    }
   });
 
   // owlCarousel for our testimonial
   $(".testimonial_list").owlCarousel({
-    items: 3,
     loop: true,
     autoplay: true,
     dots: true,
     nav: false,
     center: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      }
+    }
   });
 
   // owlCarousel for our brand logo
   $('.brand_logo_carousel').owlCarousel({
-    items: 5,
     loop: true,
     autoplay: true,
     dots: false,
-    nav: false
+    nav: false,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      }
+    }
   });
 });
 
@@ -91,6 +121,5 @@ jQuery(document).ready(function () {
       }
     });
   });
-  
-});
 
+});

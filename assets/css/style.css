@@ -176,6 +176,7 @@ ul.mega_menu_1 li {
    background-position: center;
    background-size: cover;
    z-index: 1;
+   padding: 160px 10px;
 }
 
 .single_slide_item:after {
@@ -247,10 +248,6 @@ a.boxed_btn {
 
 .boxed_btn i {
    margin-left: 12px;
-}
-
-.slide-text {
-   padding: 160px 10px;
 }
 
 .slide-text a {
@@ -763,6 +760,7 @@ a.boxed_btn {
 .brand_logo_inner {
    display: table-cell;
    vertical-align: middle;
+   padding: 10px;
 }
 
 /* brand logo end */
