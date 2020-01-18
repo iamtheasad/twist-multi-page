@@ -45,7 +45,6 @@ textarea:focus {
 /*****************************
      Header Section
 ********************************/
-
 .homepage_slides {
    overflow: hidden;
 }
@@ -55,11 +54,19 @@ textarea:focus {
 }
 
 .slide_bg_1 {
-   background-image: url(../img/slide-bg.jpg);
+   background-image: url(../img/header-slider/header_slider_1.jpg);
 }
 
 .slide_bg_2 {
-   background-image: url(../img/slide.jpg);
+   background-image: url(../img/header-slider/header_slider_2.jpg);
+}
+
+.slide_bg_3 {
+   background-image: url(../img/header-slider/header_slider_3.jpg);
+}
+
+.slide_bg_4 {
+   background-image: url(../img/header-slider/header_slider_4.jpg);
 }
 
 .logo {
@@ -90,68 +97,68 @@ textarea:focus {
    font-family: 'Zilla Slab', serif;
 }
 
+.mainmenu li ul li a {
+   padding: 10px 15px;
+}
+
 .mainmenu li:hover a {
    color: #0BBBC1;
 }
 
-.mainmenu li:hover .mega_menu,
-.mainmenu li:hover .dropdown_header_menu {
-   visibility: visible;
-}
-
-.dropdown_header_menu {
+ul.dropdown_header_menu {
    position: absolute;
-   width: 150px;
-   background: #0bbbc1;
-   visibility: hidden;
-}
-
-.dropdown_header_menu ul li {
-   display: block;
+   background-color: #0BBBC1;
+   display: none;
    text-align: left;
 }
 
-.mega_menu {
-   position: absolute;
-   background: #0BBBC1;
-   width: 100%;
-   left: 0%;
-   top: 100%;
-   padding: 15px 15px;
-   visibility: hidden;
-   -webkit-transition: .1s;
-   -o-transition: .1s;
-   transition: .1s;
+ul.dropdown_header_menu li {
+   display: flex;
 }
 
-.mega_menu_content h6 {
+ul.dropdown_header_menu li a {
+   color: #fff !important;
+   width: 100%;
+}
+
+ul.dropdown_header_menu li:hover a,
+ul.mega_menu_1 li:hover a {
+   background: #000;
+   color: #fff;
+}
+
+.mainmenu ul li:hover ul.dropdown_header_menu,
+.mainmenu li:hover ul.mega_menu,
+ul.mega_menu_1 li {
+   display: block;
+}
+
+ul.mega_menu_1 h6 {
    color: #fff;
    font-size: 20px;
    text-transform: uppercase;
-   border-bottom: 1px solid #fff;
+   border-bottom: 2px solid #fff;
    padding-bottom: 10px;
    margin-bottom: 10px;
    text-align: center;
 }
 
-ul.mega_menu_1 li {
-   display: block;
-   text-align: left;
+ul.mega_menu {
+   position: absolute;
+   background: #0BBBC1;
+   width: 100%;
+   left: 0;
+   display: none;
 }
 
-.mega_menu_content ul li a {
-   padding-left: 20px;
+ul.mega_menu_1 {
+   width: 33%;
+   float: left;
+   padding: 10px;
+}
+
+ul.mega_menu_1 li a {
    color: #fff !important;
-}
-
-.dropdown_header_menu ul li a {
-   color: #fff !important;
-}
-
-.mega_menu_content ul li:hover a,
-.dropdown_header_menu ul li:hover a {
-   background: #000;
-   color: #fff;
 }
 
 .margin_padding_0 {
@@ -639,17 +646,24 @@ a.boxed_btn {
    border-radius: 5px;
 }
 
+.single_team_item:hover {
+   outline: 2px solid #0bbbc1;
+}
+
+.single_team_item:focus {
+   outline: 2px solid #0bbbc1;
+}
+
 .single_team_item img {
    -webkit-border-radius: 50%;
    border-radius: 50%;
-   width: 150px;
-   height: 150px;
-   margin-bottom: 40px;
+   margin: 0 auto;
 }
 
 .single_team_item h4 {
    font-size: 18px;
    margin-bottom: 30px;
+   margin-top: 40px;
 }
 
 .single_team_item span {
@@ -659,6 +673,33 @@ a.boxed_btn {
    font-weight: 700;
    font-family: 'Noto Sans', sans-serif;
    margin-top: 10px;
+}
+
+.team_list ul.slick-dots,
+.testimonial_list ul.slick-dots {
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   padding: 1rem 0;
+   list-style-type: none;
+}
+
+.team_list ul.slick-dots button,
+.testimonial_list ul.slick-dots button {
+   display: block;
+   width: 10px;
+   height: 10px;
+   padding: 0;
+   border: none;
+   border-radius: 100%;
+   background-color: #b7b7b7;
+   text-indent: -9999px;
+   margin: 5px 7px;
+}
+
+.team_list ul.slick-dots button:hover,
+.testimonial_list ul.slick-dots button:hover {
+   background: #0bbbc1;
 }
 
 .owl-carousel .owl-dots.disabled,
@@ -1003,12 +1044,12 @@ a.boxed_btn {
 /* home 2 services area end */
 
 
-/* home 2 our team area start */
+/* our team area start */
 .margin_20 {
    margin: 20px 0px;
 }
 
-.single_team_item {
+.team_member {
    -webkit-box-shadow: 0px 0px 8px #ddd;
    box-shadow: 0px 0px 8px #ddd;
    border: 2px solid transparent;
@@ -1017,13 +1058,14 @@ a.boxed_btn {
    transition: .2s;
 }
 
-.single_team_item:hover {
+.team_member:hover {
    border: 2px solid #0bbbc1;
    -webkit-box-shadow: 0px 0px 0px;
    box-shadow: 0px 0px 0px;
+   outline: none;
 }
 
-/* home 2 our team area end */
+/* our team area end */
 .single_blog_box {
    -webkit-box-shadow: 0px 0px 8px #f1f1f1;
    box-shadow: 0px 0px 8px #f1f1f1;

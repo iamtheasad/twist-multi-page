@@ -1,3 +1,10 @@
+// Slick Nav For Mobile Responsive
+jQuery(document).ready(function () {
+  $("#main_nav").slicknav({
+    prependTo: '.mobile_menu_wrap'
+  });
+});
+
 // for slider
 jQuery(document).ready(function () {
   $('.homepage_slides').owlCarousel({
@@ -6,46 +13,77 @@ jQuery(document).ready(function () {
     loop: true,
     navText: ["<i class='fa fa-long-arrow-left'></i>", "<i class='fa fa-long-arrow-right'></i>"],
     autoplay: true,
+    dots: false,
   });
 
-  // owlCarousel for our team section
-  $("#teams").owlCarousel({
-    loop: true,
-    autoplay: true,
+  // Slick Carousel for Team Section
+  $('.theme_2').slick({
     dots: true,
-    nav: false,
-    center: true,
-    responsive: {
-      0: {
-        items: 1,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 2000,
+    responsive: [{
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
       },
-      600: {
-        items: 2,
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       },
-      1000: {
-        items: 3,
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
-    }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+    ]
   });
 
-  // owlCarousel for our testimonial
-  $(".testimonial_list").owlCarousel({
-    loop: true,
-    autoplay: true,
+  // Slick Carousel for our testimonial
+  $(".testimonial_list").slick({
     dots: true,
-    nav: false,
-    center: true,
-    responsive: {
-      0: {
-        items: 1,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 2000,
+    responsive: [{
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
       },
-      600: {
-        items: 2,
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       },
-      1000: {
-        items: 3,
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
-    }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+    ]
   });
 
   // owlCarousel for our brand logo

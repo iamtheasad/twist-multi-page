@@ -14,11 +14,13 @@
 
 	<!-- css links -->
 
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/modal-video.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
@@ -34,95 +36,77 @@
 					</div>
 				</div>
 				<div class="col-md-8 col-4 text-center">
+					<div class="mobile_menu_wrap"></div>
 					<div class="mainmenu">
-						<ul>
+						<ul id="main_nav">
 							<li>
 
 								<a href="index.html">Home</a>
-								<div class="dropdown_header_menu">
-									<ul>
-										<li><a href="index.html">Home 1</a></li>
-										<li><a href="home2.html">Home 2</a></li>
-									</ul>
-								</div>
+								<ul class="dropdown_header_menu">
+									<li><a href="index.html">Home 1</a></li>
+									<li><a href="home2.html">Home 2</a></li>
+								</ul>
 
 							</li>
 							<li><a href="about.html">About</a>
-								<div class="dropdown_header_menu">
-									<ul>
-										<li><a href="about.html">About</a></li>
-										<li><a href="team.html">Our Team</a></li>
-										<li><a href="testimonials.html">Testimonials</a></li>
-									</ul>
-								</div>
+								<ul class="dropdown_header_menu">
+									<li><a href="about.html">About</a></li>
+									<li><a href="team.html">Our Team</a></li>
+									<li><a href="testimonials.html">Testimonials</a></li>
+								</ul>
 							</li>
 							<li><a href="services.html">Services</a>
-								<div class="dropdown_header_menu">
-									<ul>
-										<li><a href="services.html">Services</a></li>
-										<li><a href="single-service.html">Single Service</a></li>
-									</ul>
-								</div>
+								<ul class="dropdown_header_menu">
+									<li><a href="services.html">Services</a></li>
+									<li><a href="single-service.html">Single Service</a></li>
+								</ul>
 							</li>
 							<li><a href="portfolio.html">Portfolio</a>
-								<div class="dropdown_header_menu">
-									<ul>
-										<li><a href="portfolio.html">Portfolio</a></li>
-										<li><a href="single-portfolio.html">Single Portfolio Post</a></li>
-									</ul>
-								</div>
+								<ul class="dropdown_header_menu">
+									<li><a href="portfolio.html">Portfolio</a></li>
+									<li><a href="single-portfolio.html">Single Portfolio Post</a></li>
+								</ul>
 							</li>
 							<li>
-
 								<a href="javascript:void(0)">Pages</a>
-								<div class="mega_menu">
-									<div class="row">
-										<div class="col-md-6 col-xl-4 margin_padding_0">
-											<div class="mega_menu_content">
-												<h6>Main Pages</h6>
-												<ul class="mega_menu_1">
-													<li><a href="index.html">Home</a></li>
-													<li><a href="home2.html">Home 2</a></li>
-													<li><a href="about.html">About</a></li>
-													<li><a href="services.html">Services</a></li>
-													<li><a href="portfolio.html">Portfolio</a></li>
-													<li><a href="contact.html">Contact</a></li>
-													<li><a href="blog.html">Blog</a></li>
-												</ul>
-											</div>
-										</div>
-										<div class="col-md-6 col-xl-4 margin_padding_0">
-											<div class="mega_menu_content">
-												<h6>Other Pages</h6>
-												<ul class="mega_menu_1">
-													<li><a href="single-portfolio.html">Single Portfolio</a></li>
-													<li><a href="single-service.html">Single Service</a></li>
-													<li><a href="testimonials.html">Testimonial</a></li>
-													<li><a href="single-post.html">Single Post</a></li>
-												</ul>
-											</div>
-										</div>
-										<div class="col-md-6 col-xl-4 margin_padding_0">
-											<div class="mega_menu_content">
-												<h6>Bonus Pages</h6>
-												<ul class="mega_menu_1">
-													<li><a href="404.html">404</a></li>
-													<li><a href="faq.html">FAQ</a></li>
-													<li><a href="team.html">Team</a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
 
+								<ul class="mega_menu">
+									<ul class="mega_menu_1">
+										<div class="mega_menu_content">
+											<h6>Main Pages</h6>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="home2.html">Home 2</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="services.html">Services</a></li>
+											<li><a href="portfolio.html">Portfolio</a></li>
+											<li><a href="contact.html">Contact</a></li>
+											<li><a href="blog.html">Blog</a></li>
+										</div>
+									</ul>
+									<ul class="mega_menu_1">
+										<div class="mega_menu_content">
+											<h6>Other Pages</h6>
+											<li><a href="single-portfolio.html">Single Portfolio</a></li>
+											<li><a href="single-service.html">Single Service</a></li>
+											<li><a href="testimonials.html">Testimonial</a></li>
+											<li><a href="single-post.html">Single Post</a></li>
+										</div>
+									</ul>
+									<ul class="mega_menu_1">
+										<div class="mega_menu_content">
+											<h6>Bonus Pages</h6>
+											<li><a href="404.html">404</a></li>
+											<li><a href="faq.html">FAQ</a></li>
+											<li><a href="team.html">Team</a></li>
+										</div>
+									</ul>
+								</ul>
 							</li>
 							<li><a href="blog.html">Blog</a>
-								<div class="dropdown_header_menu">
-									<ul>
-										<li><a href="blog.html">Blog</a></li>
-										<li><a href="single-post.html">Single Post</a></li>
-									</ul>
-								</div>
+								<ul class="dropdown_header_menu">
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="single-post.html">Single Post</a></li>
+								</ul>
 							</li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
@@ -160,7 +144,46 @@
 				</div>
 			</div>
 		</div>
+		<div class="single_slide_item slide_bg_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 offset-2 text-center">
+						<div class="slide-text">
 
+							<h2>Creative <span>corporate</span> agency <br /> your <span>dreams</span> come true.</h2>
+							<a href="#" class="video_btn">
+								<img src="assets/img/video.jpg" alt="video thumbnail">
+								<span class="play_icon">
+									<img src="assets/img/play.png" alt="video play icon">
+								</span>
+							</a>
+							<a href="services.html" class="boxed_btn">Our Services <i class="fa fa-angle-right"></i></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="single_slide_item slide_bg_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 offset-2 text-center">
+						<div class="slide-text">
+
+							<h2>Creative <span>corporate</span> agency <br /> your <span>dreams</span> come true.</h2>
+							<a href="#" class="video_btn">
+								<img src="assets/img/video.jpg" alt="video thumbnail">
+								<span class="play_icon">
+									<img src="assets/img/play.png" alt="video play icon">
+								</span>
+							</a>
+							<a href="services.html" class="boxed_btn">Our Services <i class="fa fa-angle-right"></i></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="single_slide_item slide_bg_2">
 			<div class="container">
 				<div class="row">
@@ -466,7 +489,7 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<div id="teams" class="team_list theme_2 owl-carousel owl-theme">
+					<div class="team_list theme_2">
 						<div class="single_team_item">
 							<img src="assets/img/team/team_1.jpg" alt="team member">
 							<h4>Dewey Gross<span>Creative Head</span></h4>
@@ -482,6 +505,12 @@
 						<div class="single_team_item">
 							<img src="assets/img/team/team_3.jpg" alt="team member">
 							<h4>Shahriar Hossain<span>UI Designer</span></h4>
+							<p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sand storm
+								slammed into the Chinese.</p>
+						</div>
+						<div class="single_team_item">
+							<img src="assets/img/team/team_2.jpg" alt="team member">
+							<h4>Ketty<span>Creative Head</span></h4>
 							<p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sand storm
 								slammed into the Chinese.</p>
 						</div>
@@ -503,7 +532,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="testimonial_list owl-carousel owl-theme">
+					<div class="testimonial_list">
 						<div class="single_testimonial_item">
 							<div class="testimonial_icon"><i class="fa fa-quote-left"></i></div>
 							<p>“ Writers and stars of Veep have responded incred
@@ -619,6 +648,8 @@
 	<script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
 	<script src="assets/js/isotope.pkgd-3.0.6.min.js" type="text/javascript"></script>
 	<script src="assets/js/modal-video.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.slicknav.min.js" type="text/javascript"></script>
+	<script src="assets/js/slick.min.js" type="text/javascript"></script>
 	<script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 
