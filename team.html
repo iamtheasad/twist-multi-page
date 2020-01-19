@@ -12,11 +12,14 @@
 
    <title>Our Team</title>
 
-   <!-- css links -->
+   <!-- CSS Links -->
+   <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/modal-video.min.css">
    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css">
    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
@@ -26,107 +29,89 @@
    <div class="header_area header_absolute">
       <div class="container">
          <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col-4">
                <div class="logo">
                   <a href="index.html"><img src="assets/img/logo_icon.png" alt="logo"> Twist</a>
                </div>
             </div>
-            <div class="col-md-8 text-center">
+            <div class="col-md-8 col-4 text-center">
+               <div class="mobile_menu_wrap"></div>
                <div class="mainmenu">
-                  <ul>
+                  <ul id="main_nav">
                      <li>
 
                         <a href="index.html">Home</a>
-                        <div class="dropdown_header_menu">
-                           <ul>
-                              <li><a href="index.html">Home 1</a></li>
-                              <li><a href="home2.html">Home 2</a></li>
-                           </ul>
-                        </div>
+                        <ul class="dropdown_header_menu">
+                           <li><a href="index.html">Home 1</a></li>
+                           <li><a href="home2.html">Home 2</a></li>
+                        </ul>
 
                      </li>
                      <li><a href="about.html">About</a>
-                        <div class="dropdown_header_menu">
-                           <ul>
-                              <li><a href="about.html">About</a></li>
-                              <li><a href="team.html">Our Team</a></li>
-                              <li><a href="testimonials.html">Testimonials</a></li>
-                           </ul>
-                        </div>
+                        <ul class="dropdown_header_menu">
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="team.html">Our Team</a></li>
+                           <li><a href="testimonials.html">Testimonials</a></li>
+                        </ul>
                      </li>
                      <li><a href="services.html">Services</a>
-                        <div class="dropdown_header_menu">
-                           <ul>
-                              <li><a href="services.html">Services</a></li>
-                              <li><a href="single-service.html">Single Service</a></li>
-                           </ul>
-                        </div>
+                        <ul class="dropdown_header_menu">
+                           <li><a href="services.html">Services</a></li>
+                           <li><a href="single-service.html">Single Service</a></li>
+                        </ul>
                      </li>
                      <li><a href="portfolio.html">Portfolio</a>
-                        <div class="dropdown_header_menu">
-                           <ul>
-                              <li><a href="portfolio.html">Portfolio</a></li>
-                              <li><a href="single-portfolio.html">Single Portfolio Post</a></li>
-                           </ul>
-                        </div>
+                        <ul class="dropdown_header_menu">
+                           <li><a href="portfolio.html">Portfolio</a></li>
+                           <li><a href="single-portfolio.html">Single Portfolio Post</a></li>
+                        </ul>
                      </li>
                      <li>
-
                         <a href="javascript:void(0)">Pages</a>
-                        <div class="mega_menu">
-                           <div class="row">
-                              <div class="col-md-6 col-xl-4 margin_padding_0">
-                                 <div class="mega_menu_content">
-                                    <h6>Main Pages</h6>
-                                    <ul class="mega_menu_1">
-                                       <li><a href="index.html">Home</a></li>
-                                       <li><a href="home2.html">Home 2</a></li>
-                                       <li><a href="about.html">About</a></li>
-                                       <li><a href="services.html">Services</a></li>
-                                       <li><a href="portfolio.html">Portfolio</a></li>
-                                       <li><a href="contact.html">Contact</a></li>
-                                       <li><a href="blog.html">Blog</a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div class="col-md-6 col-xl-4 margin_padding_0">
-                                 <div class="mega_menu_content">
-                                    <h6>Other Pages</h6>
-                                    <ul class="mega_menu_1">
-                                       <li><a href="single-portfolio.html">Single Portfolio</a></li>
-                                       <li><a href="single-service.html">Single Service</a></li>
-                                       <li><a href="testimonials.html">Testimonial</a></li>
-                                       <li><a href="single-post.html">Single Post</a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div class="col-md-6 col-xl-4 margin_padding_0">
-                                 <div class="mega_menu_content">
-                                    <h6>Bonus Pages</h6>
-                                    <ul class="mega_menu_1">
-                                       <li><a href="404.html">404</a></li>
-                                       <li><a href="faq.html">FAQ</a></li>
-                                       <li><a href="team.html">Team</a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
 
+                        <ul class="mega_menu">
+                           <ul class="mega_menu_1">
+                              <div class="mega_menu_content">
+                                 <h6>Main Pages</h6>
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="home2.html">Home 2</a></li>
+                                 <li><a href="about.html">About</a></li>
+                                 <li><a href="services.html">Services</a></li>
+                                 <li><a href="portfolio.html">Portfolio</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                                 <li><a href="blog.html">Blog</a></li>
+                              </div>
+                           </ul>
+                           <ul class="mega_menu_1">
+                              <div class="mega_menu_content">
+                                 <h6>Other Pages</h6>
+                                 <li><a href="single-portfolio.html">Single Portfolio</a></li>
+                                 <li><a href="single-service.html">Single Service</a></li>
+                                 <li><a href="testimonials.html">Testimonial</a></li>
+                                 <li><a href="single-post.html">Single Post</a></li>
+                              </div>
+                           </ul>
+                           <ul class="mega_menu_1">
+                              <div class="mega_menu_content">
+                                 <h6>Bonus Pages</h6>
+                                 <li><a href="404.html">404</a></li>
+                                 <li><a href="faq.html">FAQ</a></li>
+                                 <li><a href="team.html">Team</a></li>
+                              </div>
+                           </ul>
+                        </ul>
                      </li>
                      <li><a href="blog.html">Blog</a>
-                        <div class="dropdown_header_menu">
-                           <ul>
-                              <li><a href="blog.html">Blog</a></li>
-                              <li><a href="single-post.html">Single Post</a></li>
-                           </ul>
-                        </div>
+                        <ul class="dropdown_header_menu">
+                           <li><a href="blog.html">Blog</a></li>
+                           <li><a href="single-post.html">Single Post</a></li>
+                        </ul>
                      </li>
                      <li><a href="contact.html">Contact</a></li>
                   </ul>
                </div>
             </div>
-            <div class="col-md-2 text-right">
+            <div class="col-md-2 col-4 text-right">
                <span class="search_icon">
                   <i class="fa fa-search"></i>
                </span>
@@ -273,6 +258,8 @@
    <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
    <script src="assets/js/isotope.pkgd-3.0.6.min.js" type="text/javascript"></script>
    <script src="assets/js/modal-video.min.js" type="text/javascript"></script>
+   <script src="assets/js/jquery.slicknav.min.js" type="text/javascript"></script>
+   <script src="assets/js/slick.min.js" type="text/javascript"></script>
    <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 

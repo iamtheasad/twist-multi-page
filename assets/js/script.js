@@ -1,11 +1,12 @@
 // Slick Nav For Mobile Responsive
 jQuery(document).ready(function () {
   $("#main_nav").slicknav({
-    prependTo: '.mobile_menu_wrap'
+    prependTo: '.mobile_menu_wrap',
+    allowParentLinks: false,
   });
 });
 
-// for slider
+// Header Slider with Owl Carousel
 jQuery(document).ready(function () {
   $('.homepage_slides').owlCarousel({
     nav: true,
@@ -14,6 +15,14 @@ jQuery(document).ready(function () {
     navText: ["<i class='fa fa-long-arrow-left'></i>", "<i class='fa fa-long-arrow-right'></i>"],
     autoplay: true,
     dots: false,
+    responsive: {
+      0: {
+        nav: false,
+      },
+      600: {
+        nav: true,
+      }
+    }
   });
 
   // Slick Carousel for Team Section
