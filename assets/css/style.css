@@ -105,7 +105,8 @@ textarea:focus {
    padding: 10px 15px;
 }
 
-.mainmenu li a, .mainmenu li ul li a {
+.mainmenu li a,
+.mainmenu li ul li a {
    -webkit-transition: .2s;
    -moz-transition: .2s;
    -o-transition: .2s;
@@ -662,6 +663,7 @@ a.boxed_btn {
    background-color: #fbfbfb;
    -webkit-border-radius: 5px;
    border-radius: 5px;
+   margin-bottom: 45px;
 }
 
 .single_team_item:hover {
@@ -1221,7 +1223,6 @@ a.boxed_btn {
 
 .service_discription img {
    width: 100%;
-   height: 500px;
 }
 
 .service_discription h3 {
@@ -1281,7 +1282,7 @@ li.portfolio_active {
    background: #fbfbfb;
 }
 
-.twist_faq button.btn.btn-link {
+.twist_faq button.btn-link {
    color: #222222;
    text-decoration: none;
    font-size: 18px;
@@ -1289,26 +1290,28 @@ li.portfolio_active {
    font-family: 'Zilla Slab', serif;
    width: 100%;
    text-align: left;
-   padding: 25px 25px;
+   padding: 25px 39px;
    position: relative;
+   border: none;
 }
 
-.twist_faq button.btn.btn-link[aria-expanded="true"]:after {
+.twist_faq button.btn-link[aria-expanded="true"]:after {
    content: '-';
 }
 
-.twist_faq button.btn.btn-link:after {
+.twist_faq button.btn-link:after {
    position: absolute;
    content: '+';
-   right: 25px;
+   right: 2%;
+   top: 30%;
    background-color: #0BBBC1;
    color: #fff;
    height: 30px;
    width: 30px;
    font-size: 25px;
-   text-align: center;
-   line-height: 28px;
-   margin-top: -2px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 /* FAQ Page End */
@@ -1351,6 +1354,7 @@ li.portfolio_active {
 
 .post_desc {
    padding-top: 25px;
+   margin-bottom: 30px;
 }
 
 .post_desc h3 {

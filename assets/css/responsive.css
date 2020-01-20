@@ -45,7 +45,7 @@
    }
 
    .section_padding {
-      padding: 60px 0px;
+      padding: 30px 0px;
    }
 
    .tile_gallery {
@@ -159,6 +159,25 @@
       max-width: 100%;
    }
 
+   .section_gray_bg .col-md-4 {
+      margin-bottom: 40px;
+   }
+
+   /* home2.html page */
+   .about_success a {
+      margin-bottom: 30px;
+   }
+
+   /* blog.html page */
+   ul.twist_pagination {
+      margin-bottom: 50px;
+   }
+
+   /* contact.html page */
+   .contact_form {
+      padding-left: 0px;
+   }
+
 }
 
 
@@ -194,6 +213,36 @@
    .tile_gallery img {
       margin-top: 30px;
       width: 100%;
+   }
+
+   /* single-post.html page */
+   .post_share a {
+      margin-bottom: 20px;
+   }
+
+   .post_share {
+      text-align: center;
+   }
+
+   a.comment_reply {
+      top: 140%;
+   }
+
+   .comment_meta {
+      margin-bottom: 50px;
+   }
+
+   .comment_meta {
+      margin-bottom: 50px;
+   }
+
+   /* single-service.html page */
+   .widegt a.boxed_btn {
+      margin-bottom: 50px;
+   }
+
+   .service_discription {
+      padding-left: 0px;
    }
 
 }
