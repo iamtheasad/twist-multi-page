@@ -134,18 +134,18 @@ ul.dropdown_header_menu li a {
 }
 
 ul.dropdown_header_menu li:hover a,
-ul.mega_menu_1 li:hover a {
+li.mega_menu_content li:hover a {
    background: #000;
    color: #fff;
 }
 
 .mainmenu ul li:hover ul.dropdown_header_menu,
 .mainmenu li:hover ul.mega_menu,
-ul.mega_menu_1 li {
+li.mega_menu_content li {
    display: block;
 }
 
-ul.mega_menu_1 h6 {
+li.mega_menu_content h6 {
    color: #fff;
    font-size: 20px;
    text-transform: uppercase;
@@ -163,13 +163,13 @@ ul.mega_menu {
    display: none;
 }
 
-ul.mega_menu_1 {
+li.mega_menu_content {
    width: 33%;
    float: left;
    padding: 10px;
 }
 
-ul.mega_menu_1 li a {
+li.mega_menu_content li a {
    color: #fff !important;
 }
 
