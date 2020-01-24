@@ -722,6 +722,11 @@ a.boxed_btn {
    background: #0bbbc1;
 }
 
+.team_list ul.slick-dots .slick-active button,
+.testimonial_list ul.slick-dots .slick-active button {
+   background: #0bbbc1;
+}
+
 .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
    display: unset;
@@ -1076,6 +1081,14 @@ a.boxed_btn {
    -webkit-transition: .2s;
    -o-transition: .2s;
    transition: .2s;
+}
+
+.single_team_item.team_member {
+   padding: 13px 20px;
+}
+
+.single_team_item.team_member p {
+   margin-top: 30px;
 }
 
 .team_member:hover {
