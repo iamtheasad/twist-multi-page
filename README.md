@@ -1,5 +1,5 @@
 
-# It's a multi page fully Mobile Responsive Website.
+# It's a Multi Page Fully Mobile Responsive Website.
 
 
 HTML5, CSS3, Bootstrap, jQuery,  CSS3 Flex-box, Owl-carousel, slick-nav, isotope Technology are used here.
