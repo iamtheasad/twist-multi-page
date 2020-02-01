@@ -16,7 +16,7 @@
       items: 1,
       loop: true,
       navText: ["<i class='fa fa-long-arrow-left'></i>", "<i class='fa fa-long-arrow-right'></i>"],
-      autoplay: true,
+      autoplay: false,
       dots: false,
       responsive: {
         0: {
@@ -27,6 +27,24 @@
         }
       }
     });
+
+
+    // Bootstrap Modal PopUp Video
+    // https://codepen.io/vinceumo/pen/jYrroN
+    autoPlayYouTubeModal();
+
+    function autoPlayYouTubeModal() {
+      var trigger = $('.videoModalTriger');
+      trigger.click(function () {
+        var theModal = $(this).data("target");
+        var videoSRC = $(this).attr("data-videoModal");
+        var videoSRCauto = videoSRC + "?autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal).on('hidden.bs.modal', function (e) {
+          $(theModal + ' iframe').attr('src', '');
+        });
+      });
+    };
 
 
     // Slick Carousel for Team Section
@@ -163,6 +181,6 @@
       });
     });
 
-  });
 
+  });
 })();

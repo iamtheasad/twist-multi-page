@@ -14,7 +14,7 @@
 	<!-- SlickNav CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
 	<!-- Modal Video Player CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/modal-video.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/modal-video.min.css"> -->
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<!-- Font Awesome CSS -->
@@ -135,6 +135,21 @@
 
 
 	<!-- slider area start -->
+
+	<!-- Bootstrap Video Modal -->
+	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<button type="button" class="close btn-round btn-primary" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="homepage_slides owl-carousel">
 		<div class="single_slide_item slide_bg_1">
 			<div class="container">
@@ -145,7 +160,8 @@
 							<h2>Creative <span>corporate</span> agency <br /> your <span>dreams</span> come true.</h2>
 							<a href="#" class="video_btn">
 								<img src="assets/img/video.jpg" alt="video thumbnail">
-								<span class="play_icon">
+								<span class="play_icon videoModalTriger" data-toggle="modal" data-target="#videoModal"
+									data-videoModal="https://www.youtube.com/embed/QbOGSt39phg">
 									<img src="assets/img/play.png" alt="video play icon">
 								</span>
 							</a>
@@ -165,7 +181,8 @@
 							<h2>Creative <span>corporate</span> agency <br /> your <span>dreams</span> come true.</h2>
 							<a href="#" class="video_btn">
 								<img src="assets/img/video.jpg" alt="video thumbnail">
-								<span class="play_icon">
+								<span class="play_icon videoModalTriger" data-toggle="modal" data-target="#videoModal"
+									data-videoModal="https://www.youtube.com/embed/QbOGSt39phg">
 									<img src="assets/img/play.png" alt="video play icon">
 								</span>
 							</a>
@@ -185,7 +202,8 @@
 							<h2>Creative <span>corporate</span> agency <br /> your <span>dreams</span> come true.</h2>
 							<a href="#" class="video_btn">
 								<img src="assets/img/video.jpg" alt="video thumbnail">
-								<span class="play_icon">
+								<span class="play_icon videoModalTriger" data-toggle="modal" data-target="#videoModal"
+									data-videoModal="https://player.vimeo.com/video/121428012">
 									<img src="assets/img/play.png" alt="video play icon">
 								</span>
 							</a>
@@ -205,9 +223,11 @@
 							<h2>Creative <span>corporate</span> agency <br /> your <span>dreams</span> come true.</h2>
 							<a href="#" class="video_btn">
 								<img src="assets/img/video.jpg" alt="video thumbnail">
-								<span class="play_icon">
+								<span class="play_icon videoModalTriger" data-toggle="modal" data-target="#videoModal"
+									data-videoModal="https://www.dailymotion.com/embed/video/x37tjz2">
 									<img src="assets/img/play.png" alt="video play icon">
 								</span>
+								
 							</a>
 							<a href="services.html" class="boxed_btn">Our Services <i class="fa fa-angle-right"></i></a>
 
@@ -273,6 +293,7 @@
 			</div>
 		</div>
 	</section><!-- services section end -->
+
 
 	<!-- services section 2nd -->
 	<div class="services_bg">
@@ -678,17 +699,18 @@
 
 
 	<!-- jQuery JS -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 	<script src="assets/js/jquery-3.4.1.min.js"></script>
-	<!-- Counter Down JS -->
-	<script src="assets/js/circle-progress.min.js"></script>
 	<!-- Bootstrap 4 JS -->
 	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Modal Video JS -->
+	<!-- <script src="assets/js/jquery-modal-video.min.js"></script> -->
+	<!-- Counter Down JS -->
+	<script src="assets/js/circle-progress.min.js"></script>
 	<!-- Owl-Carousel JS -->
 	<script src="assets/js/owl.carousel.min.js"></script>
 	<!-- Isotope JS -->
 	<script src="assets/js/isotope.pkgd-3.0.6.min.js"></script>
-	<!-- Modal Video JS -->
-	<script src="assets/js/modal-video.min.js"></script>
 	<!-- SlickNav Responsive Mobile Menu JS -->
 	<script src="assets/js/jquery.slicknav.min.js"></script>
 	<!-- Slick Slider JS -->
