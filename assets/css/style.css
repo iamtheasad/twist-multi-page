@@ -257,12 +257,19 @@ li.mega_menu_content li a {
    margin-top: -27px;
    border: none;
    cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .video_btn {
    position: relative;
    display: block;
    margin: 50px 0px;
+}
+
+.video_btn img {
+   margin: 0 auto;
 }
 
 .boxed_btn {
@@ -288,6 +295,7 @@ a.boxed_btn {
 .slide-text a {
    color: #fff;
    cursor: default;
+   outline: none;
 }
 
 .header_area.header_absolute {
@@ -298,7 +306,7 @@ a.boxed_btn {
    left: 0;
 }
 
-.homepage_slides .owl-nav button.owl-next {
+.homepage_slides button.slick-next.slick-arrow {
    position: absolute;
    top: 50%;
    left: auto;
@@ -311,9 +319,11 @@ a.boxed_btn {
    -o-transform: translateY(-50%);
    transform: translateY(-50%);
    outline: none;
+   background: transparent;
+   border: none;
 }
 
-.homepage_slides .owl-nav button.owl-prev {
+.homepage_slides button.slick-prev.slick-arrow {
    position: absolute;
    top: 50%;
    color: #fff;
@@ -325,6 +335,9 @@ a.boxed_btn {
    -o-transform: translateY(-50%);
    transform: translateY(-50%);
    outline: none;
+   z-index: 1;
+   background: transparent;
+   border: none;
 }
 
 /*****************************
@@ -872,6 +885,7 @@ a.boxed_btn {
    display: table;
    width: 100%;
    height: 70px;
+   outline: none;
 }
 
 .brand_logo_inner {

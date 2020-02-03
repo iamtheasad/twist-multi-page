@@ -10,22 +10,31 @@
     });
 
 
-    // Header Slider with Owl Carousel
-    $('.homepage_slides').owlCarousel({
-      nav: true,
-      items: 1,
-      loop: true,
-      navText: ["<i class='fa fa-long-arrow-left'></i>", "<i class='fa fa-long-arrow-right'></i>"],
-      autoplay: false,
+    // Header Slider with Slick Carousel
+    $('.homepage_slides').slick({
       dots: false,
-      responsive: {
-        0: {
-          nav: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      autoplay: true,
+      pauseOnHover: false,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-long-arrow-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fa fa-long-arrow-right"></i></button>',
+      autoplaySpeed: 2000,
+      responsive: [{
+          breakpoint: 600,
+          settings: {
+            arrows: false,
+          }
         },
-        600: {
-          nav: true,
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false
+          }
         }
-      }
+      ]
     });
 
 
@@ -47,40 +56,39 @@
     };
 
 
-   // Slick Carousel for Team Section
-  $('.theme_2').slick({
-    dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    autoplay: true,
-    arrows: false,
-    autoplaySpeed: 2000,
-    responsive: [{
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+    // Slick Carousel for Team Section
+    $('.theme_2').slick({
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      autoplay: true,
+      pauseOnHover: false,
+      arrows: false,
+      autoplaySpeed: 2000,
+      responsive: [{
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-    ]
-  });
+      ]
+    });
 
 
     // Slick Carousel for our testimonial
@@ -91,6 +99,7 @@
       infinite: true,
       autoplay: true,
       arrows: false,
+      pauseOnHover: false,
       autoplaySpeed: 2000,
       responsive: [{
         breakpoint: 1000,
@@ -114,23 +123,35 @@
     });
 
 
-    // owlCarousel for our brand logo
-    $('.brand_logo_carousel').owlCarousel({
-      loop: true,
-      autoplay: true,
+    // Slick Carousel for our brand logo
+    $(".brand_logo_carousel").slick({
       dots: false,
-      nav: false,
-      responsive: {
-        0: {
-          items: 2,
-        },
-        600: {
-          items: 3,
-        },
-        1000: {
-          items: 5,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      infinite: true,
+      pauseOnHover: false,
+      autoplay: true,
+      arrows: false,
+      autoplaySpeed: 2000,
+      responsive: [{
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
         }
-      }
+      }, {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
     });
 
 
