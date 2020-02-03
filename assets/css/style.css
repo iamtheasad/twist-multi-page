@@ -1530,11 +1530,7 @@ ul.twist_pagination .page-item:last-child .page-link {
    margin-bottom: 60px;
 }
 
-.widegt.widget_search [type=search] {
-   outline-offset: 0px;
-   -webkit-appearance: 0px;
-   -moz-appearance: 0px;
-   appearance: 0px;
+.widegt.widget_search input {
    border: none;
    width: 80%;
 }
@@ -1543,11 +1539,7 @@ ul.twist_pagination .page-item:last-child .page-link {
    color: #a7a7a7;
 }
 
-.widegt.widget_search input:-ms-input-placeholder {
-   color: #a7a7a7;
-}
-
-.widegt.widget_search input::-ms-input-placeholder {
+.widegt.widget_search input:-moz-placeholder {
    color: #a7a7a7;
 }
 
@@ -1555,7 +1547,11 @@ ul.twist_pagination .page-item:last-child .page-link {
    color: #a7a7a7;
 }
 
-.widegt.widget_search input:-moz-placeholder {
+.widegt.widget_search input:-ms-input-placeholder {
+   color: #a7a7a7;
+}
+
+.widegt.widget_search input::-ms-input-placeholder {
    color: #a7a7a7;
 }
 
@@ -1823,6 +1819,31 @@ ul.commets li:hover a.comment_reply {
 
 .comment_form input::-webkit-input-placeholder,
 .comment_form textarea::-webkit-input-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input::-moz-placeholder,
+.comment_form textarea::-moz-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input:-ms-input-placeholder,
+.comment_form textarea:-ms-input-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input::-ms-input-placeholder,
+.comment_form textarea::-ms-input-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input::-webkit-input-placeholder,
+.comment_form textarea::-webkit-input-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input:-moz-placeholder,
+.comment_form textarea:-moz-placeholder {
    color: #8b8b8b;
 }
 
