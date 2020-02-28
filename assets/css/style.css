@@ -447,7 +447,7 @@ a.boxed_btn {
 }
 
 .services_bg::before {
-   background-image: url(../img/services-2-img.png);
+   background-image: url(../img/services-2-img.jpg);
    content: ' ';
    top: 0;
    left: 0;
@@ -1645,6 +1645,18 @@ ul.twist_pagination .page-item:last-child .page-link {
    margin-bottom: 70px;
 }
 
+.widegt input[type="search"] {
+   padding: 10px 16px;
+   border: 1px solid #ddd;
+}
+
+.widegt button {
+   padding: 10px 15px;
+   margin-bottom: 20px;
+   border: 1px solid #ddd;
+}
+
+
 .article_title {
    font-size: 24px;
    color: #222;
@@ -1845,6 +1857,31 @@ ul.commets li:hover a.comment_reply {
 
 .comment_form input::-webkit-input-placeholder,
 .comment_form textarea::-webkit-input-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input::-moz-placeholder,
+.comment_form textarea::-moz-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input:-ms-input-placeholder,
+.comment_form textarea:-ms-input-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input::-ms-input-placeholder,
+.comment_form textarea::-ms-input-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input::-webkit-input-placeholder,
+.comment_form textarea::-webkit-input-placeholder {
+   color: #8b8b8b;
+}
+
+.comment_form input:-moz-placeholder,
+.comment_form textarea:-moz-placeholder {
    color: #8b8b8b;
 }
 
